@@ -1,11 +1,75 @@
 {
-  "routes": [
-    { "src": "/", "has": [{ "type": "host", "value": "logistics.datasupply.sg" }], "dest": "/logistics/index.html" },
-    { "src": "/", "has": [{ "type": "host", "value": "shipping-freight.datasupply.sg" }], "dest": "/shipping-freight/index.html" },
-    { "src": "/", "has": [{ "type": "host", "value": "accounting.datasupply.sg" }], "dest": "/accounting/index.html" },
-    { "src": "/", "has": [{ "type": "host", "value": "law.datasupply.sg" }], "dest": "/law/index.html" },
-    { "src": "/", "has": [{ "type": "host", "value": "manufacturing.datasupply.sg" }], "dest": "/manufacturing/index.html" },
-    { "src": "/", "has": [{ "type": "host", "value": "finance.datasupply.sg" }], "dest": "/finance/index.html" },
-    { "handle": "filesystem" }
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "logistics.datasupply.sg"
+        }
+      ],
+      "destination": "/logistics/index.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "shipping-freight.datasupply.sg"
+        }
+      ],
+      "destination": "/shipping-freight/index.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "accounting.datasupply.sg"
+        }
+      ],
+      "destination": "/accounting/index.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "law.datasupply.sg"
+        }
+      ],
+      "destination": "/law/index.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "manufacturing.datasupply.sg"
+        }
+      ],
+      "destination": "/manufacturing/index.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "finance.datasupply.sg"
+        }
+      ],
+      "destination": "/finance/index.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "partners.datasupply.sg"
+        }
+      ],
+      "destination": "/partners/index.html"
+    }
   ]
 }
